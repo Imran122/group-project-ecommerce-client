@@ -1,0 +1,52 @@
+.brand-title {
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 35px;
+}
+
+.brand-title:hover {
+  color: black;
+}
+
+.navbar-links {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 19px;
+}
+
+.navbar-links a {
+  color: black !important;
+  position: relative;
+  padding: 0px;
+}
+
+.navbar-links a::before {
+  content: "";
+  background: #000;
+  width: 0%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-links a:hover::before {
+  width: 90%;
+}
+
+.login-btn-header {
+  color: white;
+  background-color: #1c9fff;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 30px;
+  font-size: 19px;
+  font-weight: 500;
+  transition: 0.2s ease-in-out;
+}
+
+.login-btn-header:hover {
+  background-color: rgb(255, 187, 0);
+  color: black;
+}
