@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "name": "Boys T-shirt",
+    "price": "49000",
+    "description": "Boys T-shirt",
+    "img": "https://i.ibb.co/cJGwfrB/s5.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Black Watch",
+    "price": "3000",
+    "description": "Black Watch",
+    "img": "https://i.ibb.co/xj65rNg/s2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "TEAM Bag",
+    "price": "1200",
+    "description": "Bag description",
+    "img": "https://i.ibb.co/FWSK7fh/s4.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Sports T-shirt",
+    "price": "1250",
+    "description": "Sports T-shirt",
+    "img": "https://i.ibb.co/jT6DnXz/s3.jpg"
+  },
+  {
+    "id": 5,
+    "name": "HSunglass",
+    "price": "130000",
+    "description": "Sunglass",
+    "img": "https://i.ibb.co/0FVknWP/5de6b079ad403221c799bdfc-2-R3r2x-Gln-Qq-Z.png"
+  },
+  {
+    "id": 6,
+    "name": "Specical Bag",
+    "price": "1350",
+    "description": "Specical Bag",
+    "img": "https://i.ibb.co/8Ybp7WG/F-Purse1-drop.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Bress Let",
+    "price": "1425",
+    "description": "Bress Let",
+    "img": "https://i.ibb.co/9rY45VY/anchor-bracelet-mens.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Smart Watch",
+    "price": "44500",
+    "description": "Smart Watch",
+    "img": "https://i.ibb.co/4N3NG0r/gold-zipper-on-black-fashion-backpack.jpg"
+  },
+  {
+    "id": 9,
+    "name": "IR Bullet Camera",
+    "price": "2150",
+    "description": "Max. 30fps@1080P. HD and SD output switchable. 3.6mm fixed lens. Smart 20m IR",
+    "img": "https://i.ibb.co/n3pd83m/9.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Lenovo D19-10 18.5 Inch HD HDMI VGA Monitor",
+    "price": "22000",
+    "description": "Resolution: 1366 x 768. Panel Type: TN. HDMI and VGA input. TÜV Low Blue Light",
+    "img": "https://i.ibb.co/Qp2yjJ5/10.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Xiaomi Mi P1 L32M6-6AEU 32-Inch Smart Android HD TV with Netflix (Global Version)",
+    "price": "3800",
+    "description": "Processor: MSD6683, CPU: CA53 x 4, up to 1.2GHz. RAM: 1.5GB, Storage: 8GB. 32' HD (1,366 x 768) display. Supports Dolby Audio and DTS-HD",
+    "img": "https://i.ibb.co/RPp9nR2/11.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Nikon D5600 DSLR Camera with 18-55mm Lens",
+    "price": "2900",
+    "description": "DX-Format CMOS Sensor. EXPEED 4 Image Processor. 24.2 Megapixel. 5 fps continues shooting",
+    "img": "https://i.ibb.co/p1FNqQH/12.jpg"
+  }
+]
