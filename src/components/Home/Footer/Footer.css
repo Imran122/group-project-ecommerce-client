@@ -1,0 +1,17 @@
+.footer {
+  background-color: rgb(236, 236, 236);
+  padding: 15px 0px 40px 0px;
+}
+
+.footer-title {
+  color: black;
+}
+
+.f-information-link a {
+  text-decoration: none;
+  position: relative;
+}
+
+.f-information-link a:hover {
+  text-decoration: underline;
+}
