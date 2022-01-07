@@ -1,3 +1,7 @@
+#service-details{
+    padding:20px 0px 70px 0;
+}
+
 .count{ 
     width: 100px;
     display: flex;
@@ -15,4 +19,16 @@
     margin: 0 auto;
     text-align: center;
     font-size: 20px;
+}
+.add-cart-btn{
+    border: 2px solid #198754;
+    padding:10px 30px;
+    font-size: 20px;
+    background-color: #fff;
+    font-weight: 500;
+    transition: all .4s ease;
+}
+.add-cart-btn:hover{
+    background-color: #198754;
+    color:#fff;
 }

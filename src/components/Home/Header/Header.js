@@ -5,9 +5,12 @@ import './Header.css'
 const Header = () => {
     return (
         <div>
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <nav className="navbar navbar-expand-lg navbar-light bg-light scroll">
                 <div className="container">
-                    <a className="navbar-brand brand-title" href="#">e-Commerce</a>
+                    <Link to='/home'> 
+                        <a className="navbar-brand brand-title" href="#">e-Commerce</a>
+                    </Link>
+                    
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                     </button>
@@ -17,6 +20,8 @@ const Header = () => {
                                 Home
                             </Link> 
                             <a className="nav-link" href="#">Products</a>
+                            <Link to='/myorders'>My Orders</Link>
+                            <a className="nav-link" href="#"></a>
                             <a className="nav-link" href="#">About Us</a>
                         </div>
                         <div>

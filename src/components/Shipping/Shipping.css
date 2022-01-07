@@ -1,0 +1,9 @@
+#shipping-section{
+    /* background-color: rgb(43, 23, 23);
+     */
+     background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url('https://images.pexels.com/photos/6532665/pexels-photo-6532665.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position:center;
+    color:#000;
+}
