@@ -1,25 +1,72 @@
-import React from 'react';
-import { Button, Form } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Button, Form, Spinner } from 'react-bootstrap';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import useAuth from '../../hooks/useAuth';
 import Footer from '../Home/Footer/Footer';
 import Header from '../Home/Header/Header';
 import './Register.css'
 
 const Register = () => {
+    // firebase authentication
+    const {signInUsingGoogle, createNewUser, isLoading, error } = useAuth();
+
+
+    // set user's name, email and password values for new user registration
+    const [name, setName] = useState();
+    const [email, setEmail] = useState();
+    const [password, setPassword] = useState();
+
+
+    // get name, email and password values for new user registration
+    const handleNameChange = e => {
+        setName(e.target.value);
+    };
+
+    const handleEmailChange = e => {
+        setEmail(e.target.value);
+    };
+
+    const handlePasswordChange = e => {
+        setPassword(e.target.value)
+    }
+
+
+    
+    // redirect history for returning from log in page to where user came
+    const location = useLocation();
+    const navigate = useNavigate();
+    const redirect_uri = location.state?.from || '/home';
+
+
+    // google sign in
+    const handleGoogleSignIn = () => {
+      signInUsingGoogle()
+      .then(result => {
+        navigate(redirect_uri);
+      })
+    }
+
+    // new user registration
+    const handleRegister = e => {
+      e.preventDefault();
+      createNewUser(name,email,password,navigate,redirect_uri);
+    }
+    
+
     return (
         <div className='register-container'>
         <Header></Header>
             <div className='m-4'>
                 <div className="register-form-container container">
                     <h1>Please Register</h1>
-                    <Form>
+                    <Form onSubmit={handleRegister}>
                         <Form.Group className="mb-3" controlId="formBasicName">
                             <Form.Label>Your Name</Form.Label>
-                            <Form.Control type="text" placeholder="Your Name" />
+                            <Form.Control onBlur={handleNameChange} type="text" placeholder="Your Name" />
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="formBasicEmail">
                             <Form.Label>Email address</Form.Label>
-                            <Form.Control type="email" placeholder="Enter email" />
+                            <Form.Control onBlur={handleEmailChange} type="email" placeholder="Enter email" />
                             <Form.Text className="text-muted">
                                 We'll never share your email with anyone else.
                             </Form.Text>
@@ -27,11 +74,11 @@ const Register = () => {
 
                         <Form.Group className="mb-3" controlId="formBasicPassword">
                             <Form.Label>Password</Form.Label>
-                            <Form.Control type="password" placeholder="Password" />
+                            <Form.Control onBlur={handlePasswordChange} type="password" placeholder="Password" />
                         </Form.Group>
-                        {/* <p style={{color: 'red'}}>{error}</p> */}
+                        <p style={{color: 'red'}}>{error}</p>
                         <p>
-                            {/* { isLoading && <Spinner animation="border" variant="primary" /> } */}
+                            { isLoading && <Spinner animation="border" variant="primary" /> }
                         </p>
                         <Button className="register-btn" type="submit">
                             Register
@@ -39,7 +86,7 @@ const Register = () => {
                         <p className="m-0 pt-3">Already Registered? <Link to="/login">Please Log In Here</Link> </p>
                         <div>
                             <p className="m-0 pt-3 pb-3">or</p>
-                            <button className="btn btn-warning"><i className="fab fa-google"></i>oogle Sign In</button>
+                            <button onClick={handleGoogleSignIn} className="btn btn-warning"><i className="fab fa-google"></i>oogle Sign In</button>
                         </div>
                     </Form>
                 </div>
