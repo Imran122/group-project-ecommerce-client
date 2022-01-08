@@ -5,9 +5,6 @@
   font-size: 35px;
   text-decoration: none;
 }
-.navbar a{
-  text-decoration: none;
-}
 .brand-title:hover {
   color: black;
 }
@@ -53,6 +50,33 @@
   background-color: rgb(255, 187, 0);
   color: black;
 }
-.navbar-nav a{
-  text-decoration: none !important;
+
+.avatar-img {
+  height: 43px;
+  width: 43px;
+  margin-right: 10px;
+  margin-left: 8px;
+  border-radius: 50%;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.user-info p {
+  color: black;
+}
+
+@media (max-width: 991px) {
+  .navbar-links a {
+    width: 110px;
+  }
+  .login-btn-header {
+    margin-top: 10px;
+  }
+  .user-info {
+    margin-top: 10px;
+  }
 }
