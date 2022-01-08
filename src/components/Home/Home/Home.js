@@ -3,7 +3,6 @@ import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
 import Banner from '../Banner/Banner';
 import Products from '../Products/Products';
-import Newsletter from '../Newsletter/Newsletter';
 
 const Home = () => {
     return (
@@ -11,7 +10,6 @@ const Home = () => {
             <Header></Header> 
              <Banner></Banner>
              <Products></Products>
-             <Newsletter></Newsletter>
             <Footer></Footer>
         </div>
     );
