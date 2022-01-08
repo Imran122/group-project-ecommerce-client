@@ -47,6 +47,7 @@
   font-size: 19px;
   font-weight: 500;
   transition: 0.2s ease-in-out;
+  margin-left: 20px;
 }
 
 .login-btn-header:hover {
@@ -55,4 +56,6 @@
 }
 .navbar-nav a{
   text-decoration: none !important;
+  display: inline-block;
+  margin: 0px 10px;
 }

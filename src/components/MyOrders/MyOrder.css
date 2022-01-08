@@ -11,3 +11,11 @@
     background-color: #FFCA2C;
     color:#fff
 }
+.icon span{
+    display: inline-block;
+    margin:8px 12px;
+}
+.icon span:hover{
+    color:rgb(207, 10, 10);
+    cursor: pointer;
+}

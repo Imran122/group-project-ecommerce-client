@@ -1,0 +1,11 @@
+.cart-btn{
+    padding: 5px 12px;
+    border: 2px solid rgb(70, 238, 4);
+    color:#000;
+    background-color: #fff;
+    font-weight: bold;
+    transition:all .3s ease;
+}
+.cart-btn:hover{
+    background-color: rgb(70, 238, 4);
+}

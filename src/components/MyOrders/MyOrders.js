@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import Footer from "../Home/Footer/Footer";
 import Header from "../Home/Header/Header";
 import './MyOrder.css'
+import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
+import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 
 const MyOrders = () => {
   return (
@@ -28,8 +30,8 @@ const MyOrders = () => {
                     <div className="content">
                       <h4>Denim Jaket</h4>
                       <div className="icon">
-                        <span>Delete</span>
-                        <span>Wishlist</span>
+                        <span> <DeleteOutlineIcon /> </span>
+                        <span> <FavoriteBorderOutlinedIcon /> </span>
                       </div>
                     </div>
                   </div>
@@ -63,8 +65,8 @@ const MyOrders = () => {
                     <div className="content">
                       <h4>Cap Stylis</h4>
                       <div className="icon">
-                        <span>Delete</span>
-                        <span>Wishlist</span>
+                        <span> <DeleteOutlineIcon /> </span>
+                        <span> <FavoriteBorderOutlinedIcon /> </span>
                       </div>
                     </div>
                   </div>
@@ -98,8 +100,8 @@ const MyOrders = () => {
                     <div className="content">
                       <h4>Winter Jaket</h4>
                       <div className="icon">
-                        <span>Delete</span>
-                        <span>Wishlist</span>
+                        <span> <DeleteOutlineIcon /> </span>
+                        <span> <FavoriteBorderOutlinedIcon /> </span>
                       </div>
                     </div>
                   </div>
@@ -139,7 +141,7 @@ const MyOrders = () => {
                             <p>100</p>
                         </div>
                         <div className="d-flex justify-content-between border-bottom py-2">
-                            <h5>Payable Total</h5>
+                            <h5 className="fw-bold">Payable Total</h5>
                             <p className="fw-bold">200</p>
                         </div>
                         <Link to='/shipping'> 
