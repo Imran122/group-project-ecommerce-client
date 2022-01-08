@@ -18,6 +18,7 @@ const Header = () => {
                             <Link to='/' className="nav-link">Home</Link>
                             <Link to='/products' className="nav-link">Products</Link>
                             <Link to='/aboutUs' className="nav-link">About Us</Link>
+                            { user.displayName && <Link className="nav-link" to="/dashboard">Dashboard</Link>}
                         </div>
                         <div className='me-2 '>
                             {
