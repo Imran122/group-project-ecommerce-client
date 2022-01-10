@@ -16,7 +16,7 @@ const Product = ({product}) => {
                 <h5>Price{price}</h5> */}
                 <div className="btn my-3">  
                     <Link to={`/product/${id}`}>
-                    <button className='btn btn-outline-dark'>Buy Now</button>
+                    <button className='btn btn-warning'>Buy Now</button>
                     </Link>
                 </div>
             </div>

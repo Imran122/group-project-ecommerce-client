@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Newsletter = () => {
+const Newsletter = () => { 
     return (
         <div id='newsletter' style={{
             backgroundColor: '#FF324D',
