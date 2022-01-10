@@ -14,14 +14,14 @@ const AllProducts = () => {
         <div>
             <Header></Header>
             <div className="container">
-                <div className="row">
+               
                     {
                         allProducts.map(allProduct => <AllProduct
                         allProduct={allProduct}
                         key={allProduct.id}
                         ></AllProduct>)
                     } 
-                </div>
+                 
             </div> 
             <Footer></Footer>
         </div>

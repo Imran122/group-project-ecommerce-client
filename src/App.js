@@ -11,6 +11,7 @@ import PrivateRoute from './PrivateRoute/PrivateRoute';
 import ServiceDetails from './components/ServiceDetails/ServiceDetails';
 import AllProducts from './components/AllProducts/AllProducts';
 import NotFound from './components/NotFound/NotFound';
+import Shipping from './components/Shipping/Shipping';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
                 <Route path="/login" element={<Login></Login>}></Route>
                 <Route path="/register" element={<Register></Register>}></Route>
                 <Route path='/allproducts' element={<AllProducts></AllProducts>}/>
+                <Route path='/shipping' element={<Shipping />}/>
                 <Route path="/product/:Id" element={<ServiceDetails />} />
                 <Route path="/dashboard" element={<PrivateRoute><Dashboard></Dashboard></PrivateRoute>}>
                     <Route exact path="/dashboard" element={<h3>Please select a topic.</h3>}></Route>

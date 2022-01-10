@@ -2,10 +2,12 @@ import React from "react";
 import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 import './AllProduct.css'
+import { Link } from "react-router-dom";
 
 const AllProduct = ({ allProduct }) => {
   const { id, name, description, img, price } = allProduct;
   return (
+    <>
     <div className="col-lg-12"> 
       <div className="container"> 
         {/* ========Single Order======== */}
@@ -54,7 +56,8 @@ const AllProduct = ({ allProduct }) => {
           </div>
         </div>
       </div>
-    </div>
+    </div> 
+    </>
   );
 };
 
