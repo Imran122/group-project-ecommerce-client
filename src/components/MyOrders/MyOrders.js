@@ -6,8 +6,7 @@ import './MyOrder.css'
 
 const MyOrders = () => {
   return (
-    <div>
-      <Header></Header> 
+    <div> 
       <div className="my-orders-content my-4">
         <div className="container-fluid">
           <div className="row">
@@ -150,8 +149,7 @@ const MyOrders = () => {
             </div>
           </div>
         </div>
-      </div>
-      <Footer></Footer>
+      </div> 
     </div>
   );
 };
