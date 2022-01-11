@@ -6,8 +6,9 @@ const Products = () => {
     useEffect(() => {
         fetch('http://localhost:5000/products')
             .then(res => res.json())
-            .then(data => setProducts(data));
+            .then(data => setProducts(data.products));
     }, [])
+    console.log(products)
     return (
         <div>
             <h2 className='text-center my-5'>Our Products </h2>

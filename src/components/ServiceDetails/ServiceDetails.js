@@ -12,7 +12,7 @@ const ServiceDetails = () => {
   useEffect(() => {
     fetch("http://localhost:5000/products")
       .then((res) => res.json())
-      .then((data) => setSingleDetails(data));
+      .then((data) => setSingleDetails(data.products));
   }, []);
 
   useEffect(() => {
