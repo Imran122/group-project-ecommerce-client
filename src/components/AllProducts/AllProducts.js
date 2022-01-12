@@ -6,7 +6,7 @@ import Header from '../Home/Header/Header';
 const AllProducts = () => {
     const [allProducts, setAllProducts] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/products')
+        fetch('https://nameless-tundra-96938.herokuapp.com/products')
             .then(res => res.json())
             .then(data => setAllProducts(data.products));
     }, [])
